@@ -24,7 +24,7 @@ export const Wrapper = styled.div`
 export const Content = styled.div`
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.6);
     border-radius: 20px;
     backdrop-filter: blur(8px);
 

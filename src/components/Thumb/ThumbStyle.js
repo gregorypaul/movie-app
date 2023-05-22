@@ -5,8 +5,9 @@ export const Image = styled.img`
     max-width: 720px;
     max-height:600px;
     transition: all 0.3s;
-    object-fit: cover;
+    object-fit: contain;
     animation: animateThumb 0.5s;
+    object-position:top center;
 
     :hover {
         opacity: 0.8;

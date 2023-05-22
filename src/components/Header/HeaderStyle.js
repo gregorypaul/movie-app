@@ -1,20 +1,28 @@
 import styled from 'styled-components'
 
 export const Wrapper = styled.div`
-    background: rgba(0, 0, 0, 0.7);
+    background-color: #000;
     position: fixed;
     top:0;
     left:0;
     width:100%;
-    z-index:100;
+    z-index:101;
     padding: 0 20px;
     transition: background .3s ease-in-out;
+    height:55px;
+    overflow:hidden;
     a {
         display:flex;
         text-decoration:none;
     }
+    .home-link {
+        margin-left:auto;
+    }
     &.active {
         background: rgba(0, 0, 0, 0.9);
+    }
+    .icon-holder {
+        line-height:60px
     }
 `;
 
@@ -22,7 +30,6 @@ export const Content = styled.div`
     display: flex;
     align-items: center;
     max-width: var(--maxWidth);
-    padding: 7px 0;
     margin: 0 auto;
     h4 {
         color:var(--white);

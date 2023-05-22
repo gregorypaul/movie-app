@@ -1,5 +1,6 @@
 {
   "name": "movie-app",
+  "homepage": "https://movie-app.gregorypauldesigns.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

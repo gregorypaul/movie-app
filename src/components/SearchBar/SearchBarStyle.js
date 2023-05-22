@@ -40,6 +40,9 @@ export const Content = styled.div`
         height: 40px;
         color: var(--white);
         text-align:center;  
+        &::placeholder {
+            color: var(--white);
+        }
 
         :focus {
             outline: none;

@@ -3,6 +3,8 @@ import {Link} from 'react-router-dom'
 import TMDBLogo from '../../images/movie_app_logo.webp'
 import { Wrapper, Content, LogoImg, TMDBLogoImg, GlassDiv } from './HeaderStyle'
 import { SearchBar } from "../SearchBar";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHome } from '@fortawesome/free-solid-svg-icons';
 
 const Header = () => {
 
@@ -23,6 +25,12 @@ const Header = () => {
                     <Link to ={'/'}>
                         <LogoImg src={ TMDBLogo } alt="tmdb-logo" />
                         <h4>The Movie App</h4>
+                    </Link>
+                    <Link to={'/'} className="home-link">
+                        <div className="icon-holder">
+                            <FontAwesomeIcon icon={faHome} />
+                        </div>
+                        <h4>Home</h4>
                     </Link>
                 </Content>
             </Wrapper>
